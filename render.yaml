@@ -1,0 +1,26 @@
+# Paid resources: do not deploy without reviewing the current price.
+services:
+  - type: web
+    name: ej-mini-lab-school
+    runtime: python
+    plan: starter
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: sh start.sh
+    healthCheckPath: /healthz
+    autoDeployTrigger: off
+    disk:
+      name: learning-records
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: MINI_DB
+        value: /var/data/mini.sqlite3
+      - key: MINI_SECURE
+        value: "1"
+      - key: APP_ORIGIN
+        sync: false
+      - key: BOOTSTRAP_TEACHER_ID
+        value: ejteacher
+      - key: BOOTSTRAP_TEACHER_PASSWORD
+        sync: false

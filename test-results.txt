@@ -1,0 +1,13 @@
+test_01_accounts (__main__.Tests.test_01_accounts) ... ok
+test_02_five_students_ten_days (__main__.Tests.test_02_five_students_ten_days) ... ok
+test_03_atomic_replay (__main__.Tests.test_03_atomic_replay) ... ok
+test_04_reset_disable_delete (__main__.Tests.test_04_reset_disable_delete) ... ok
+test_05_csrf_rate (__main__.Tests.test_05_csrf_rate) ... ok
+test_06_export_backup_restart (__main__.Tests.test_06_export_backup_restart) ... ok
+test_07_parallel_submissions (__main__.Tests.test_07_parallel_submissions) ... ok
+test_08_secure_cookie (__main__.Tests.test_08_secure_cookie) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 15.281s
+
+OK
